@@ -18,6 +18,9 @@ COPY requirements.txt .
 # Instalar las librerias de Python
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Instalar la dependencia gráfica extra que mediapipe pidió sin romper el caché del pip install pesado
+RUN apt-get update && apt-get install -y libgles2 libegl1 && rm -rf /var/lib/apt/lists/*
+
 # Copia el resto del codigo de tu app
 COPY . .
 
