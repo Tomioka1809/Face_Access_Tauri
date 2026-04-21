@@ -18,7 +18,7 @@ services:
   # Servicio del Backend (Python FastAPI)
   backend:
     build: 
-      context: ./backend-python
+      context: ./backend
       dockerfile: Dockerfile
     container_name: face_access_backend
     restart: always

@@ -24,7 +24,7 @@ dist-ssr
 *.sw?
 
 # Python & Docker
-backend-python/.venv/
-backend-python/__pycache__/
-backend-python/*.pyc
+backend/.venv/
+backend/__pycache__/
+backend/*.pyc
 .env
